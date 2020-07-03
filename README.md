@@ -1,0 +1,1 @@
+This project is a Cafe-Restaurant Web Page build with plain HTML, CSS and a some animations created with Javascript

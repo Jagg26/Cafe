@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open-Sans', Arial, Sans-serif;
+    font-size: 16px;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto; 
+    overflow: hidden;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    background: url('../img/bg.jpg') #281A0C;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .container{
+    position: relative;
+    height: 700px;
+}
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+header .menu a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+header .menu a:hover{
+    text-decoration: underline;
+}
+header .texts{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+header .texts .name{
+    font-size: 50px;
+    font-weight: 600;
+}
+header .texts .name span {
+    font-weight: 300;
+}
+header .texts h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+/*MAIN*/
+.main{
+    background: url(../img/texture.png);
+    background-repeat: repeat;
+}
+.main .about .container{
+    overflow: visible;
+    position: relative;
+}
+.main .about .picture{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+.main .about .picture img {
+    vertical-align: top;
+    width: 100%;
+}
+.main .about article{
+    background: #FFF;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+.main .about article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .about article p{
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+/*MENU*/
+.main .menu {
+    padding-top: 565px;
+    margin-bottom: 50px;
+}
+.main .menu .title{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .menu .container-menu,
+.main .menu .container-menu2{
+    border: 2px solid black;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+.main .menu article {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.main .menu .category{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main .menu .saucers{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted black;
+    overflow: hidden;
+}
+.main .menu .name{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+.main .menu .price{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+.main .menu .description{
+    font-size: 16px;
+    color: #676767;
+    clear: both;
+}
+.main .galery{
+    overflow: hidden;
+}
+.main .galery .picture{
+    width: 25%;
+    float: left;
+}
+.main .galery .picture img{
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+.main .galery .picture:hover img{
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition:all .3s ease ;
+    transition:all .3s ease ;
+}
+.main .location {
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.main .location .title{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .location .direction{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.main .location .hours{
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+.main .location .direction .street{
+    margin-bottom: 15px;
+}
+.main .location .hours h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main .location .hours .inweek,
+.main .location .hours .weekend{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.main .map{
+    width: 100%;
+    overflow: hidden;
+}
+.main .map iframe{
+    width: 100%;
+    max-height: 600px;
+}
+/*FOOTER*/
+footer{
+    background: #000;
+}
+footer .copyright{
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+    header .container{
+        position: static;
+        height: auto;
+    }
+    header .texts{
+        position: static;
+        margin: 100px 0;
+    }
+    header .menu{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    header .menu a {
+        margin: 10px 20px;
+    }
+    header .texts .name{
+        font-size: 30px;
+    }
+    header .texts h3{
+        font-size: 18px;
+    }
+
+    .main .about .picture{
+        width: 100%;
+        position: relative;
+    }
+    .main .about article{
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform:translate(0px, 0);
+    }
+    .main .menu{
+        padding-top: 300px;
+    }
+    .main .menu article {
+        width: 100%;
+    }
+    .main .galery .picture {
+        width: 50%;
+    }
+    .main .map{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .main .about article h3{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+    .main .menu article .name,
+    .main .menu article .price{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .main .menu article .description{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .main .location .direction{
+        margin-bottom: 18px;
+    }
+
+    .main .location .direction,
+    .main .location .hours {
+        width: 100%;
+        text-align: center;
+    }
+}
